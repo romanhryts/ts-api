@@ -1,0 +1,214 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \*********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Work+Sans:wght@100;200;300;400&display=swap);
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/main.scss (1) ***!
+  \*************************************************************************************************************/
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  width: 100vw; }
+  .header__brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 20px;
+    min-width: 30%; }
+  .header__title {
+    color: white;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 80px; }
+  .header__brand img {
+    width: auto;
+    height: 90%; }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100%; }
+  .header__nav img {
+    width: 40px;
+    height: auto; }
+
+@media screen and (max-width: 630px) {
+  .header__title {
+    font-size: 50px; }
+  .header__brand img {
+    height: 70%; } }
+
+@media screen and (max-width: 505px) {
+  .header {
+    height: 15vh; }
+    .header__title {
+      font-size: 30px; }
+    .header__brand img {
+      height: 70%; }
+    .header__nav a:first-of-type,
+    .header__nav a:nth-of-type(2) {
+      display: none; }
+    .header__nav a:nth-of-type(3) {
+      padding-top: 10px; } }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh; }
+  .main .input-field {
+    background-color: red;
+    display: flex;
+    width: 70%;
+    min-height: 50px;
+    height: 50%;
+    margin: 50px 0 0; }
+    .main .input-field input {
+      border: 1px solid black;
+      width: 70%;
+      min-height: 100%;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 24px;
+      padding: 0 10px; }
+    .main .input-field button {
+      background-color: black;
+      border: none;
+      color: #FFFFFF;
+      width: 30%;
+      min-height: 100%;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 24px; }
+
+.characters-container {
+  margin: 50px 0;
+  font-family: 'Work Sans', sans-serif; }
+
+.character {
+  border: 1px solid black;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  position: relative; }
+
+.img-container {
+  border-right: 1px solid black; }
+  .img-container img {
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 5px;
+    width: auto;
+    height: 150px; }
+
+.character__description {
+  margin: 0 15px; }
+  .character__description .info {
+    text-transform: uppercase;
+    color: gray; }
+  .character__description h4 {
+    font-size: larger; }
+
+.clear {
+  cursor: pointer; }
+
+.delete {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  position: absolute;
+  right: 5px; }
+
+.btn-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin-bottom: 50px; }
+  .btn-more-container .more {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 40px; }
+  .btn-more-container .more.active {
+    display: block; }
+
+@media screen and (max-width: 800px) {
+  .main .input-field .load,
+  .main .input-field .input-id,
+  .main .input-field .clear {
+    font-size: 15px; } }
+
+@media screen and (max-width: 600px) {
+  .main .input-field .clear,
+  .main .input-field .load {
+    font-size: 15px;
+    padding: 5px 10px; } }
+
+@media screen and (max-width: 400px) {
+  .main .input-field .load,
+  .main .input-field .input-id,
+  .main .input-field .clear {
+    font-size: 12px; } }
+
+@media screen and (max-width: 500px) {
+  .main .character {
+    font-size: smaller; }
+  .main .character .delete {
+    top: 5px; } }
+
+@media screen and (max-width: 400px) {
+  .main .character .delete {
+    padding: 5px 10px; } }
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh; }
+  .footer__text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center; }
+    .footer__text span {
+      color: #007ACC;
+      font-weight: 400; }
+
+@media screen and (max-width: 760px) {
+  .footer__text {
+    font-size: 17px; } }
+
+@media screen and (max-width: 560px) {
+  .footer__text {
+    font-size: 14px; } }
+
+@media screen and (max-width: 460px) {
+  .footer__text {
+    font-size: 10px; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
